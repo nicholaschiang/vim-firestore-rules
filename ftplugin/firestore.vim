@@ -3,16 +3,16 @@
 " Maintainer: Nicholas Chiang
 " Latest Revision: 29 August 2019
 
-if exists("b:current_syntax")
-	finish
-endif
+"if exists("b:current_syntax")
+	"finish
+"endif
 
 " Keywords
 syn keyword allowKeywords allow nextgroup=operationKeywords skipwhite
 
-syn keyword operationKeywords read get list write create update delete nextgroup=conditionKeywords skipwhite
+syn keyword operationKeywords read get list write create update delete
 
-syn keyword conditionKeywords if != == in || &&
+"syn keyword conditionKeywords if != == in || &&
 
 " Matches
 "syn match syntaxElementMatch 'regexp' contains=syntaxElement1 nextgroup=syntaxElement2 skipwhite
